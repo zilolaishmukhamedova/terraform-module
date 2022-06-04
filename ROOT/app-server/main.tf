@@ -11,5 +11,6 @@ module "vpc-dev" {
 }
 
 module "app-server" {
-  source = ""
+  source = "git::https://github.com/zilolaishmukhamedova/terraform-module.git//CHILD/EC2"
+  #source = "git@github.com:zilolaishmukhamedova/terraform-module//CHILD/EC2"
 }
